@@ -184,7 +184,11 @@ function checkFunction() {
  $.post("https://still-retreat-64429.herokuapp.com/api/verifyToken",
  ({token: `${parseInt(token)}`}),
  function(data){
-  document.getElementById("message").innerHTML = data.message
+   if(data.message === 'Item Id Found')
+  document.getElementById("message").innerHTML = "This Product is Genuine. Thanks for being a valuable customer of Protein Science Nutrition"
+  else {
+    document.getElementById("message").innerHTML = "This Product is Not Genuine."
+  }
  });
 
        
