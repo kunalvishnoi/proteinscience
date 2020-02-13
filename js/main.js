@@ -179,10 +179,11 @@ function myFunction() {
 function checkFunction() {
 
  var token = document.getElementById('token').value;
+ 
  var data1 = {token: `${token}`};
  
  $.post("https://still-retreat-64429.herokuapp.com/api/verifyToken",
- ({token: `${parseInt(token)}`}),
+ ({token: `${(token)}`}),
  function(data){
    if(data.message === 'Item Id Found')
   document.getElementById("message").innerHTML = "This Product is Genuine. Thanks for being a valuable customer of Protein Science Nutrition"
