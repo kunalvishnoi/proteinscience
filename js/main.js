@@ -187,7 +187,7 @@ function checkFunction() {
  $.post("https://still-retreat-64429.herokuapp.com/api/verifyToken",
  ({token: `${(token)}`}),
  function(data){
-   if(data.message === 'Item Id Found' || tokensArray.includes(`${(token)}`}))
+   if(data.message === 'Item Id Found' || tokensArray.includes(`${(token)}`))
   document.getElementById("message").innerHTML = "This Product is Genuine. Thanks for being a valuable customer of Protein Science Nutrition"
   else {
     document.getElementById("message").innerHTML = "This Product is Not Genuine."
