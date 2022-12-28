@@ -184,7 +184,7 @@ var token = document.getElementById("token").value;
 
   var data = { key: token };
 
-  fetch("http://65.2.23.201:8000/api/productG/verify", {
+  fetch("https://propharma.isitca.com/api/productG/verify", {
     method: "POST", // or 'PUT'
     headers: {
       "Content-Type": "application/json",
